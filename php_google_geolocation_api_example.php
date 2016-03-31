@@ -9,9 +9,10 @@ Note:
 //global config vars
 $geo_api = 'https://www.googleapis.com/geolocation/v1/geolocate?key=';
 $api_key = '';
+$scan    = '{"macAddress": "bc:ae:c5:c2:fd:5f","signalStrength": 54,"age": 0,"channel": 11,"signalToNoiseRatio": 40},{"macAddress": "00:18:e7:e2:4c:18","signalStrength": 44,"age": 0,"channel": 2,"signalToNoiseRatio": 40}';
 
 //examples
-print_r(lang_list());
+print_r(geo_locate($scan));
 
 //google api format:
 // {
